@@ -30,7 +30,14 @@ OR
 
 Simply download the repo from web browser
 
-### 2. Environment Setup
+
+### 2. Unzip Data.zip
+
+```bash
+unzip data.zip
+```
+
+### 3. Environment Setup
 
 ```bash
 # Create a virtual environment (recommended)
@@ -41,7 +48,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 3. Run the Notebook
+### 4. Run the Notebook
 
 You can run the notebook through Jupyter's interactive interface or from the terminal:
 
@@ -59,14 +66,13 @@ jupyter nbconvert --to notebook --execute notebook.ipynb --output notebook_execu
 ## Repository Structure
 
 ```bash
-├── data/
+├── data.zip/
 │   ├── data_labels_mainData.csv
 │   ├── data_labels_extraData.csv
 │   └── images/             # 20,280 cell images (27×27 RGB PNG)
 ├── figures/                # Generated figures (created by notebook)
 ├── notebook.ipynb          # Main Jupyter notebook (code + analysis)
 ├── notebook.pdf            # PDF of Main Jupyter notebook 
-├── models/                 # Saved versions of trained Models 
 ├── report.pdf              # Detailed academic report
 ├── requirements.txt        # Python dependencies
 └── README.md               # This file
